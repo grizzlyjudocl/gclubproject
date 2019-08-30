@@ -29,3 +29,8 @@ services:
     restart: always
 volumes:
   dbdata:
+
+networks:
+    default:
+       external:
+         name: webproxy
