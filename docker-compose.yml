@@ -7,8 +7,9 @@ services:
       - .:/usr/share/nginx/html
       - ./site.conf:/etc/nginx/conf.d/default.conf
     restart: always
-    ports:
-      - "80:80"
+    environment:
+      VIRTUAL_HOST: grizzlyjudoclub.pl,www.grizzlyjudoclub.pl
+      LETSENCRYPT_HOST: grizzlyjudoclub.pl,www.grizzlyjudoclub.pl
   php:
     build: .
     volumes:
@@ -19,8 +20,6 @@ services:
     restart: always
   db:
     image: postgres:11-alpine
-    ports:
-    - "5432:5432"
     environment:
       POSTGRES_USER: gclubproject
       POSTGRES_DB: gclubproject
