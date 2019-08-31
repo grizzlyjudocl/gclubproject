@@ -14,7 +14,7 @@ class LocationsSeeder extends Seeder
     {
         for($i = 0; $i < 10; $i++) {
             $location = new Location();
-            $location->name = "Placówka ".($i+1);
+            $location->name = "Placówki".($i+1);
             $location->save();
         }
     }
