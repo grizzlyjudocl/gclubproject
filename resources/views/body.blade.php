@@ -10,6 +10,7 @@
 
 <form method="POST" action="{{ route('storeLocationData') }}">
     {{ csrf_field() }}
+    <h1>Grizzly judo club</h1>
     <div class="row">
         <div class="col-2">
             <label for="location">Wybór placówki</label>
