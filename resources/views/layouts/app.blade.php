@@ -6,6 +6,7 @@
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
 
     <title>{{ config('app.name', 'GizzlyJudo') }}</title>
 
@@ -21,6 +22,7 @@
     <link href="//cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" rel="stylesheet">
 
     <link href="/fontawesome-free-5.9.0-web/css/all.min.css" rel="stylesheet">
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
