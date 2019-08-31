@@ -12,10 +12,10 @@ class LocationsSeeder extends Seeder
      */
     public function run()
     {
-        for($i = 0; $i < 10; $i++) {
+        
             $location = new Location();
-            $location->name = "Placówki".($i+1);
+            $location->name = "Przedszkole Sieraków";
             $location->save();
-        }
+        
     }
 }
