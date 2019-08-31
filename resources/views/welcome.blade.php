@@ -56,6 +56,13 @@
             .row {
                 margin-bottom: 34px;
             }
+
+            .container {
+                height:100vh;
+            }
+            .alert-danger {
+                margin: 10px 0;
+            }
         </style>
     </head>
     <body>
