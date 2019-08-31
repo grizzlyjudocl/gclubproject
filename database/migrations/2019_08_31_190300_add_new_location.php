@@ -14,7 +14,7 @@ class AddNewLocation extends Migration
     public function up()
     {
         $location = new \App\Location();
-        $location->name = "Przedszkole Sieraków";
+        $location->name = "Przedszkole Ciasna";
         $location->save();
     }
 
