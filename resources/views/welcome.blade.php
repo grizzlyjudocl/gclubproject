@@ -28,6 +28,7 @@
                 align-items: center;
                 display: flex;
                 justify-content: center;
+                flex-direction: column;
             }
 
             .position-ref {
@@ -36,8 +37,13 @@
             }
             .container {
                 padding: 120px 0 0 0;
-                transform: translateY(-40px);
+                transform: translateY(-100px);
             }
+            .head_mobile {
+                font-weight: 600;
+                font-size: 26px;
+            }
+
             @media screen and (min-width: 830px) { 
                 .position-ref {
 
@@ -51,6 +57,10 @@
                     padding: 260px 0 0 0;
                     transform: translateY(-16px);
                  }
+
+                 .head_mobile {
+                    display:none;
+                 } 
             }
 
             .top-right {
@@ -84,16 +94,23 @@
             .info-judo {
                 font-weight: 900;
             }
+
+            .hide-item {
+                display:none;
+            }
         </style>
     </head>
     <body>
         <div class="flex-center position-ref full-height">
+            <div class="head_mobile">GRIZZLY JUDO KIDS</div>
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
                         <a href="{{ url('/home') }}">Home</a>
                     @else
-                        <a href="{{ route('login') }}">Zaloguj się</a>
+                        <a href="{{ route('login') }}">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm.707 13.946l-1.035 1.054h-.672v1h-1v1h-3v-2.292l3.146-3.185c.496 1.111 1.419 1.988 2.561 2.423zm5.293-4.279c0 2.025-1.642 3.667-3.667 3.667-2.024 0-3.666-1.642-3.666-3.667s1.642-3.667 3.666-3.667c2.025 0 3.667 1.642 3.667 3.667zm-1.375-1.375c0-.506-.41-.917-.917-.917s-.916.411-.916.917.409.917.916.917.917-.411.917-.917z"/></svg>
+                        </a>
 
                         {{--
                         @if (Route::has('register'))
