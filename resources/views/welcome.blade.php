@@ -23,9 +23,6 @@
                 margin: 0;
             }
 
-            .full-height {
-                height: 100vh;
-            }
 
             .flex-center {
                 align-items: center;
@@ -35,6 +32,25 @@
 
             .position-ref {
                 position: relative;
+                background: lightblue;
+            }
+            .container {
+                padding: 120px 0 0 0;
+                transform: translateY(-40px);
+            }
+            @media screen and (min-width: 830px) { 
+                .position-ref {
+
+                 background-repeat: no-repeat;
+                 background: url('https://i.imgur.com/cYF5eFj.png');
+                 background-position: bottom;
+                 background-size: cover;
+                 }
+
+                 .container {
+                    padding: 260px 0 0 0;
+                    transform: translateY(-16px);
+                 }
             }
 
             .top-right {
@@ -57,11 +73,16 @@
                 margin-bottom: 34px;
             }
 
-            .container {
-                height:100vh;
+            .container form {
+                padding: 20px;
+                box-shadow: 3px 6px 25px 0px rgba(0,0,0,0.75);
+                background: white;
             }
             .alert-danger {
                 margin: 10px 0;
+            }
+            .info-judo {
+                font-weight: 900;
             }
         </style>
     </head>
