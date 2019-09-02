@@ -21,7 +21,7 @@
                 ul. Mańki 18<br>
                 Numer konta: 57 1600 1462 1825 5345 7000 0001<br>
                 tel:+48722085756
-                e-mail: <a href="mailto:grizzlyjudoclub@gmail">grizzlyjudoclub@gmail</a>
+                e-mail: <a href="mailto:grizzlyjudoclub@gmail.com">grizzlyjudoclub@gmail.com</a>
             </p>
     </div>
     <div class="row">
