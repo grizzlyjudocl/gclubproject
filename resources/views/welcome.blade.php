@@ -85,8 +85,9 @@
 
             .container form {
                 padding: 20px;
-                box-shadow: 3px 6px 25px 0px rgba(0,0,0,0.75);
+                box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.55);
                 background: white;
+                border: 4px solid #93aee8;
             }
             .alert-danger {
                 margin: 10px 0;

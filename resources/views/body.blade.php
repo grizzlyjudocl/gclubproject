@@ -10,6 +10,20 @@
 
 <form method="POST" action="{{ route('storeLocationData') }}">
     {{ csrf_field() }}
+        <div class="info-judo">
+        <p>
+            Warunkiem zapisania dziecka na zajęcia jest wysłanie wypełnionego kwestionariusza i wysłanie potwierdzenia przelewu (w tym samym dniu co kwestionariusz).
+            W tytule przelewu proszę wpisać imię dziecka i przedszkole do którego uczęszcza dziecko.W przypadku gdy dziecko nie znajdzie się na liście uczestników zajęć (np z powodu braku miejsc) to pieniądze zostaną zwrócone, a dziecko zostanie wpisane na listę rezerwową o czym zostaną Państwo poinformowani.</p>
+            <p>
+                Dane do przelewu:<br>
+                G.J.K. Tomasz Gadacz<br>
+                42-286 Koszęcin<br>
+                ul. Mańki 18<br>
+                Numer konta: 57 1600 1462 1825 5345 7000 0001<br>
+                tel:+48722085756
+                e-mail: <a href="mailto:judogrizzlykoszecin@gmail.com">judogrizzlykoszecin@gmail.com</a>
+            </p>
+    </div>
     <div class="row">
         <div class="col-2">
             <label for="location">Wybór placówki</label>
