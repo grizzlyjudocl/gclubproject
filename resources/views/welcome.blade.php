@@ -99,7 +99,19 @@
             .hide-item {
                 display:none;
             }
+            .js--rodo-btn { cursor: pointer; display: block; font-weight: 900; text-decoration: underline !important;}
+            .js--rodo { display:none; font-size: 12px;}
         </style>
+        <script>
+        function toggle() {
+          var x = document.getElementById("js--rodo");
+          if (x.style.display === "none") {
+            x.style.display = "block";
+          } else {
+            x.style.display = "none";
+          }
+        }
+        </script>
     </head>
     <body>
         <div class="flex-center position-ref full-height">
